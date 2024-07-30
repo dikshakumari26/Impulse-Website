@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('fest2.jpg');
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+}
+
+/* Navbar Styles */
+
+
+
+
+.container {
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 50px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+
+.logo-container img {
+    max-width: 200px;
+    border-radius: 10px;
+    animation: pulse2 1.5s infinite;
+}
+
+.countdown-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background 0.5s;
+}
+
+.time-unit:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.time-unit span {
+    font-size: 3em;
+    color: bisque;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulse2 {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+.label {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #aaa;
+}
+
+.colon {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0 10px;
+    line-height: 1.2;
+    align-items: center;
+    animation: pulse 1.5s infinite;
+}
+
+.event-info h3 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

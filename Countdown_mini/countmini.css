@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: url('fest2.jpg');
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styles */
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Ensure equal spacing around the divs */
+    width: 100%; /* Adjust width to fit the content */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(1px);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.left-div, .right-div {
+    width: 20%; /* Adjust as needed */
+    text-align: center;
+}
+
+.middle-div {
+    width: 40%; /* Adjust as needed */
+    text-align: center;
+}
+
+
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(4, 33, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background 0.5s;
+    margin: 0 5px;
+}
+
+.time-unit:hover {
+    transform: scale(1.5);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.time-unit span {
+    font-size: 1em;
+    color: bisque;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.label {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #aaa;
+}
+
+.colon {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0 10px;
+    line-height: 1.2;
+    animation: pulse 1.5s infinite;
+}
+
+.google-map-cont {
+    width: 100%; /* Adjust width as needed */
+    text-align: center; /* Center align the text */
+    margin: 20px 0;
+}
+
+.google-map-cont h1 {
+    font-size: 18px; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Space between heading and iframe */
+}
+
+.iframe-wrapper {
+    position: relative;
+    width: 100%; /* Ensure this is 100% to fit the container */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove border */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.contact-us {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    margin: 10px 0;
+}
+
+.contact-us a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin-left: 6rem;
+}
+
+.social-media i {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-media i:hover {
+    color: #1E90FF;
+}
