@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #794e4e58;
+    background-color: #ffffff00;
     color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@ body {
     background-color: #8f020241;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
     text-align: center;
     transition: transform 0.3s ease;
     display: inline-block;

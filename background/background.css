@@ -146,7 +146,7 @@ body, html {
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     text-align: center;
-    z-index: 1000; /* Ensure it's above the background and below the iframe */
+    z-index: 100; /* Ensure it's above the background and below the iframe */
 }
 
 .iframe-heading-container h2 {

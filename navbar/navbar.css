@@ -14,6 +14,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
+    backdrop-filter: blur(10px);
 }
 
 .navbar-logo img {
@@ -27,13 +28,20 @@ body {
 }
 
 .navbar-brand {
-    color: #fff;
-    font-size: 24px;
+    color: #aaaaaa;
+    font-size: 38px;
     font-weight: bold;
     transform: translateY(5px); /* Move the brand down */
+    position: relative;
+    left: -180px; /* Adjust this value as needed */
 }
 
+
 .navbar-links {
+    display: flex;
+    align-items: center; /* Align links vertically center */
+}
+.navbar-links-special {
     display: flex;
     align-items: center; /* Align links vertically center */
 }
@@ -42,11 +50,17 @@ body {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
-    padding: 41px 10px;
+    padding: 42px 10px;
     transform: translateY(5px); /* Move the links up */
 }
 
 .navbar-links a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.507);
     border-radius: 2px;
+}
+
+.navbar-links-special a:hover {
+    background-color: rgba(255, 0, 0, 0.686);
+    border-radius: 2px;
+    transform: scale(1.15) ;
 }
